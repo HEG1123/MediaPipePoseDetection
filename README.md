@@ -1,18 +1,7 @@
-# react-native-mediapipe
+This project is a modified version of [react-native-mediapipe](https://github.com/cdiddy77/react-native-mediapipe) by Charles Parker, which is licensed under the MIT License.
 
-A React Native Camera and Player for MediaPipe applications.
 
-* [Documentation](https://cdiddy77.github.io/react-native-mediapipe/)
 
-## Requirements
-* Gradle minimum SDK 24 or higher
-* Android-SDK Version 26 or higher
-* iOS 12 or higher
-
-## Features
-* 🎥 Video streaming from a react-native app to a media pipe
-* 🔍 AI Object Detection
-* 🧩 Works as a react-native component
 
 ## Getting Started
 
