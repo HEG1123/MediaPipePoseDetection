@@ -1,68 +1,24 @@
 This project is a modified version of [react-native-mediapipe](https://github.com/cdiddy77/react-native-mediapipe) by Charles Parker, which is licensed under the MIT License.
 
+# Getting Started
+Goto MediaPipePoseDetection/examples/posedetection/
+run following commands...
+yarn
+bundle install
+cd ios && pod install && cd ..
+
+Open MediaPipePoseDetection/examples/posedetection/ios/posedetection.xcodeworkspace with Xcode
+Goto "Signing & Capabilities" and configure signing
+
+Now you can run the application via..
+1. just clicking ▶ button on Xcode (command + R)
+or
+2. in your terminal goto MediaPipePoseDetection/examples/posedetection/
+   run "npm start"
+   Open new terminal and goto MediaPipePoseDetection/examples/posedetection/
+   run "yarn ios"
 
 
-
-## Getting Started
-
-1) Install react-native-mediapipe from npm:
-```sh
-npm install react-native-mediapipe react-native-vision-camera react-native-worklets-core
-```
-or Install react-native-mediapipe from yarn:
-```sh
-yarn add  react-native-mediapipe react-native-vision-camera react-native-worklets-core
-```
-
-```js
-import { MediaPipeCamera } from "react-native-mediapipe";
-```
-
-2) In your babel.config.js file
-```
-module.exports = {
-presets: ['module:@react-native/babel-present'],
-plugins: [['react-native-worklets-core/plugin']],
-}
-```
-
-3) In your gradle/build.gradle file
-```
-buildscript {
-ext {
-...
-minSdkVersion = 24 (Make sure that this is at least 24)
-...
-  }
-...
-}
-```
-4) If you're on IOS:
-In your info.plist file in the outermost <dict> tag:
-```
-<key>NSCameraUsageDescription</key>
-<string>$(PRODUCT_NAME) needs access to your Camera.</string>
-
-<!-- optionally, if you want to record audio: -->
-<key>NSMicrophoneUsageDescription</key>
-<string>$(PRODUCT_NAME) needs access to your Microphone.</string>
-```
-then in your terminal:
-```
-cd ios
-bundle install (you only need to do this once)
-pod install
-```
-
-
-4) If you're on Android:
-In your AndroidManifest.xml file inside the <manifest> tag:
-```
-<uses-permission android:name="android.permission.CAMERA" />
-
-<!-- optionally, if you want to record audio: -->
-<uses-permission android:name="android.permission.RECORD_AUDIO" />
-```
 
 
 ## Contributing
